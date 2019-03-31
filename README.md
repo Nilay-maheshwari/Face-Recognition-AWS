@@ -1,5 +1,7 @@
 # Face-Recognition-AWS
 This is a face recognition  project built on AWS cloud using Rekognition , s3 , lambda , DynamoDB , Cloudwatch as a service
+
+
 create a lambda role with policies :s3 fullaccess, dynamodb fullaccess, Rekognition, cloudwatch fullaccess or cloudwatch log access
 upload image 1 in recognition-image1, this will trigger a lambda funtion where we have applied s3 trigger.
 From this lambda function we are uploading that image's key and bucket name in dynamodb table using putitem function.
